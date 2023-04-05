@@ -42,15 +42,12 @@ void PrintTree(const Tree& tree)
 {
     std::cout << "c Width = " << Length(tree) <<
                  ", Leaf = " << LeafsCount(tree) << ", Max edge = " << MaxEdge(tree) << "\n";
-    std::cout << "p edge = " << ((tree.size() + 1) << 3) <<
+    std::cout << "p edge " << ((tree.size() + 1) << 3) <<
                  " " << tree.size() << "\n";
 
-    int i =0;
     for(const auto& e : tree)
     {
-
        std::cout << "e " << e.A + 1 << " " << e.B + 1 << " " << e.Length << "\n";
-       i++;
     }
 }
 
